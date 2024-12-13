@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    width: 62.5rem;
+    width: 75rem;
     margin: 0 auto;
     text-align: center;
     margin-top: 3.125rem;
@@ -31,6 +31,8 @@ body{
 .team-container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1.875rem;
 }
 
 .team-card{
@@ -39,16 +41,25 @@ body{
     color: white;
     text-align: left;
     align-items: center;
-    padding-right: 2.5rem;
+    width: 21.875rem;
     gap: 1.25rem;
 }
 
 .card-image img{
     height: 6.25rem;
+    display: block;
 }
 
 .card-description span{
     display: block;
+}
+
+.card-description > span{
+    margin: .3125rem 0;
+}
+
+.card-description span:last-child{
+    color: #6ECBF2;
 }
 
 
