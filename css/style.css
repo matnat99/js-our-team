@@ -5,6 +5,50 @@
     padding: 0;
 }
 
+/* GENERAL */
 body{
     font-family: "Fredoka", sans-serif;
 }
+
+.container{
+    width: 62.5rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3.125rem;
+}
+
+/* SECTION TEAM */
+#team > h1{
+    font-size: 3.125rem;
+    color: #E53170;
+}
+
+#team > p{
+    margin: 1.875rem 0;
+}
+
+/* Team Container */
+.team-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-card{
+    display: flex;
+    background-color: black;
+    color: white;
+    text-align: left;
+    align-items: center;
+    padding-right: 2.5rem;
+    gap: 1.25rem;
+}
+
+.card-image img{
+    height: 6.25rem;
+}
+
+.card-description span{
+    display: block;
+}
+
+
