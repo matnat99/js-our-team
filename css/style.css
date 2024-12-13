@@ -30,7 +30,8 @@ body{
 /* Team Container */
 .team-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2.5rem;
     flex-wrap: wrap;
     row-gap: 1.875rem;
 }
@@ -62,4 +63,36 @@ body{
     color: #6ECBF2;
 }
 
+/* RESPONSIVE */
+/* Da 1200px a 0 */
+@media screen and (max-width: 1200px){
+    .container{
+        width: 56.25rem;
+    }
 
+    .team-card{
+        width: 25rem;
+    }
+}
+
+/* Da 880px a 0 */
+@media screen and (max-width: 880px){
+    .container{
+        width: 40.625rem;
+    }
+
+    .team-card{
+        width: 18.75rem;
+    }
+}
+
+/* Da 650px a 0 */
+@media screen and (max-width: 650px){
+    .container{
+        width: 28.125rem;
+    }
+
+    .team-card{
+        width: 28.125rem;
+    }
+}
