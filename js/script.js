@@ -44,16 +44,16 @@ let listItems = ""
 
 // DOM Events
 for(let i = 0; i < teamMembers.length; i++){
-  const member = teamMembers[i]
+  const {name, role, email, img} = teamMembers[i]
   listItems += `
   <div class="team-card">
       <div class="card-image">
-          <img src="${member.img}" alt="${member.name}">
+          <img src="${img}" alt="${name}">
       </div>
       <div class="card-description">
-          <h3>${member.name}</h3>
-          <span>${member.role}</span>
-          <span>${member.email}</span>
+          <h3>${name}</h3>
+          <span>${role}</span>
+          <span>${email}</span>
       </div>
   </div>
   `
