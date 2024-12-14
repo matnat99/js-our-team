@@ -1,3 +1,4 @@
+// Variables
 const teamMembers = [
     {
       name: "Marco Bianchi",
@@ -39,24 +40,34 @@ const teamMembers = [
 
 // DOM Elements
 const teamContainerElm = document.querySelector('.team-container')
-
-let listItems = ""
+const teamFormElm = document.getElementById('team-form')
+const fullNameElm = document.getElementById('full-name')
+const roleElm = document.getElementById('role')
+const emailElm = document.getElementById('email')
+const imgElm = document.getElementById('img')
+const submitElm = document.getElementById('submit')
 
 // DOM Events
-for(let i = 0; i < teamMembers.length; i++){
-  const {name, role, email, img} = teamMembers[i]
-  listItems += `
-  <div class="team-card">
-      <div class="card-image">
-          <img src="${img}" alt="${name}">
-      </div>
-      <div class="card-description">
-          <h3>${name}</h3>
-          <span>${role}</span>
-          <span>${email}</span>
-      </div>
-  </div>
-  `
-}
 
-teamContainerElm.innerHTML = listItems
+//On page load
+renderTeam()
+
+// Submit Form
+teamFormElm.addEventListener('submit', function(event){
+  event.preventDefault()
+
+  const name = fullNameElm.value 
+  const role = roleElm.value
+  const email = emailElm.value
+  const img = imgElm.value
+  const newMember = {
+    name,
+    role,
+    email,
+    img
+  }
+
+  // Aggiornamento array e ri-render HTML
+  teamMembers.push(newMember)
+  renderTeam()
+})

@@ -5,6 +5,8 @@
     padding: 0;
 }
 
+
+
 /* GENERAL */
 body{
     font-family: "Fredoka", sans-serif;
@@ -14,8 +16,10 @@ body{
     width: 75rem;
     margin: 0 auto;
     text-align: center;
-    margin-top: 3.125rem;
+    margin-top: 1.875rem;
 }
+
+
 
 /* SECTION TEAM */
 #team > h1{
@@ -26,6 +30,8 @@ body{
 #team > p{
     margin: 1.875rem 0;
 }
+
+
 
 /* Team Container */
 .team-container{
@@ -62,6 +68,42 @@ body{
 .card-description span:last-child{
     color: #6ECBF2;
 }
+
+
+
+/* Section Form */
+#section-form{
+    margin-top: 1.875rem;
+    color: #369eca;
+}
+
+#team-form{
+    margin: 1.25rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team-form input{
+    display: block;
+    margin-bottom: 1.25rem;
+    width: 300px;
+    height: 1.875rem;
+    border-radius: .3125rem;
+    border: .1875rem solid #6ECBF2;;
+}
+
+#team-form button{
+    margin-top: 1.25rem;
+    display: block;
+    height: 1.875rem;
+    border-radius: .3125rem;
+    border: none;
+    background-color: #6ECBF2;;
+    padding: .5rem .625rem;
+}
+
+
 
 /* RESPONSIVE */
 /* Da 1200px a 0 */
